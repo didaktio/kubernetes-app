@@ -1,0 +1,39 @@
+# Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp-dp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: myapp
+  template:
+    metadata:
+      labels:
+        app: myapp
+    spec:
+      containers:
+        - name: myapp-ctr
+          image: gcr.io/kubernetes-19955991/v2
+          ports:
+            - containerPort: 80
+          imagePullPolicy: Always
+---
+
+# Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: myapp-svc
+  labels:
+    app: myapp
+spec:
+  ports:
+    - name: default-port
+      port: 80
+  selector:
+    app: myapp
+  type: LoadBalancer
+---
+
