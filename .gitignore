@@ -33,4 +33,5 @@ npm-debug.log*
 /resources/windows
 /www
 
-src/environments
+
+src/environments/

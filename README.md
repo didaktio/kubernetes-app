@@ -14,7 +14,7 @@ Source code for the Kubernetes tutorial from the `BONUS` section of the [Ionic A
 
 
 ## Possible Next Steps
-* Complexify! Right now the app is embarassingly simple. Try adding in some pages, components, features etc. There aren't rules here!
+* Complexify! Right now the app is embarrassingly simple. Try adding in some pages, components, features etc. There are no rules here!
 * Modify the `Dockerfile`. Spend a few minutes reading the [Docker Documentation](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/), and try some of the things out.
 * Combine with [Ionic Gestures](https://ionicframework.com/docs/utilities/gestures).
 * Replace and/or combine with [Ionic Animations](https://ionicframework.com/docs/utilities/animations).
